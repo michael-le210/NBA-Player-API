@@ -3,7 +3,10 @@ const { request } = require('express')
 const express = require('express')
 const { listen } = require('express/lib/application')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors())
 
 const player = {
     'russell westbrook': {
